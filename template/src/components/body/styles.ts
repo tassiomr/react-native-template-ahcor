@@ -1,11 +1,11 @@
 import styled from 'styled-components/native';
-import { IStyledComponentsProps } from '../../types/interface';
+import { IStyledComponentsProps } from '../../typescript/interface';
 
 export const Component = styled.View`
   flex: 1;
   width: 100%;
   alignItems: center;
-  paddingLeft: 8;
-  paddingRight: 8;
-  backgroundColor: ${(props: IStyledComponentsProps) => props.theme.background};
+  paddingLeft: 8px;
+  paddingRight: 8px;
+  backgroundColor: ${(props: IStyledComponentsProps) => props.theme.colors.background};
 `;

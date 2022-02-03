@@ -1,4 +1,4 @@
-import { Theme } from "../types/type";
+import { Theme } from "../typescript/type";
 
 const light: Theme = {
   background: '#fff',
@@ -12,6 +12,8 @@ const dark: Theme = {
   primary: '#55f244'
 };
 
-const Themes = { light, dark }
+const colors = { 
+  light, dark 
+}
 
-export default Themes;
+export default colors;

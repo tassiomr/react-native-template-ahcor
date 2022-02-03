@@ -8,7 +8,7 @@ import { Home } from './pages';
 const App = () => {
   const theme = useColorScheme();
   return (
-    <ThemeProvider theme={{ colors: Themes[theme], sizes }}>
+    <ThemeProvider theme={{ colors: Themes.dark, sizes }}>
       <Home />
     </ThemeProvider>
   );

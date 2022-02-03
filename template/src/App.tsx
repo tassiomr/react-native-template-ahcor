@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { useColorScheme } from 'react-native'
-import { ThemeProvider } from 'styled-components';
+import {  ThemeProvider } from 'styled-components';
+import sizes from './configs/sizes';
 import Themes from './configs/theme';
 import { Home } from './pages';
  
 const App = () => {
   const theme = useColorScheme();
-
   return (
-    <ThemeProvider theme={Themes[theme || 'light']}>
-      <Home />;
+    <ThemeProvider theme={{ colors: Themes[theme], sizes }}>
+      <Home />
     </ThemeProvider>
   );
 }

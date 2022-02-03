@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ActivityIndicator } from 'react-native';
-import { Container } from './styles';
+import { Component } from './styles';
 
 type Props = {
   children: React.ReactElement,
@@ -8,5 +8,5 @@ type Props = {
 }
 
 export const Body: React.FC<Props> = ({ children, isLoading }) => {
-  return <Container>{ isLoading ? <ActivityIndicator /> : children }</Container>
+  return <Component>{ isLoading ? <ActivityIndicator size='large' /> : children }</Component>
 }
